@@ -1,5 +1,6 @@
 plugins {
     kotlin("jvm") version "1.9.0"
+    java
 }
 
 group = "dev.example"
@@ -10,7 +11,7 @@ repositories {
 }
 
 dependencies {
-    testImplementation(kotlin("test"))
+    testImplementation(kotlin("stdlib"))
 }
 
 tasks.test {
