@@ -23,7 +23,7 @@ fun main(){
     )
 
     println(lays)
-    println(lays.getPrice)
+    println("${lays.getPrice} ${lays.price}")
 
     val p1 = Person(name = "Ajay", age = 30, email = "ajay@gmail.com")
     println(p1)

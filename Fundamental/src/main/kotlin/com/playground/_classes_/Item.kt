@@ -6,10 +6,15 @@ class Item(val manufacturer : String,
 {
     var expiryDate : String = ""
 
-    private var price : Float = 0.0F
+     var price : Float = 0.0F
+        get() = field
+        set(value)  {
+            field = value;
+        }
 
-    var getPrice: Float = 0.0f
+    var getPrice = 0.0F
         get() = price
+
 
     constructor(manufacturer: String,
                 dateOfManufacturing: String,
