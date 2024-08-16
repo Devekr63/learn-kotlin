@@ -14,14 +14,14 @@ fun main(){
     val businessFilter = {course : Course ->
         course.category == CourseCategory.BUSINESS}
 
-    val kafkaFilter = {course : Course -> course.topicsCovered.containsAll(arrayListOf("Kafka", "SpringBoot"))}
+    val kafkaFilter = {course : Course -> course.topicsCovered.containsAll(arrayListOf("Kafka"))}
 
 //    filterCourseOnCategory(courses, devFilter)
 //    filterCourseOnCategory(courses, businessFilter)
-//    filterCourseOnCategory(courses, kafkaFilter)
+    filterCourseOnCategory(courses, kafkaFilter)
 
     //*** map operation ***
-    displayCourse(courses, businessFilter)
+//    displayCourse(courses, businessFilter)
 
 }
 

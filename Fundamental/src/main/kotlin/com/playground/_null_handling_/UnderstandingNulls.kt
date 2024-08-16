@@ -18,6 +18,17 @@ fun main(){
     val newMovie : Movie = getMovie() ?: Movie("Sholay", "Hindi")
 
     startMovie(newMovie)
+
+    collectionsNullability()
+}
+
+fun collectionsNullability() {
+    val list : MutableList<String?>? = mutableListOf("dev", "kumar", "rao")
+    list?.forEach { println(it) }
+
+    list?.add(null)
+
+    list?.forEach{println(it!!.length)}
 }
 
 class Movie(val name : String?, val language : String?){
