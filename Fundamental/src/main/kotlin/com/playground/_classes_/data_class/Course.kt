@@ -1,8 +1,17 @@
 package com.playground._classes_.data_class
 
-data class Course(val name : String,
-    val code : Int,
-    val author : String)
+
+data class Course(var name : String,
+    var code : Int,
+    var author : String,
+    var courseCategory: CourseCategory = CourseCategory.DEVELOPMENT)
+
+enum class CourseCategory{
+    DEVELOPMENT,
+    DESIGN,
+    MARKETING,
+    BUSINESS
+}
 
 fun main(){
     val c1 = Course(name = "Kotlin for begineers",

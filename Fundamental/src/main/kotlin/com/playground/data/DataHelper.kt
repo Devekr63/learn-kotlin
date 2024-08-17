@@ -13,7 +13,7 @@ const val INTEGRATION_TESTING = "Integraion Testing"
 data class Course(
     val id: Int,
     val name: String,
-    val category: CourseCategory,
+    var category: CourseCategory,
     val topicsCovered: List<String>
 )
 

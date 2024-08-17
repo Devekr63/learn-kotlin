@@ -1,7 +1,7 @@
-package com.playground.functions
+package com.playground._functions_
 
-import com.playground.functions.utils.validateEmail
-import com.playground.functions.utils.*
+import com.playground._functions_.utils.validateEmail
+import com.playground._functions_.utils.*
 
 fun main(){
     println("Name of the user : $userName")

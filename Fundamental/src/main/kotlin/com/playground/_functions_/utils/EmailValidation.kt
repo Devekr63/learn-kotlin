@@ -1,4 +1,4 @@
-package com.playground.functions.utils
+package com.playground._functions_.utils
 
 fun validateEmail(email : String) = when(email.indexOf("@")){
     in 1..email.length -> when(email.lastIndexOf(".com")){
